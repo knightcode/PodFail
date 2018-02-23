@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.2'
+use_frameworks!
+
+workspace "PodFail"
+
+target 'App' do
+    project 'App'
+    pod 'PromiseKit/CorePromise', :inhibit_warnings => true
+    pod 'FooKit', :path => '../FooKit'
+    pod 'FooUI', :path => '../FooUI'
+    target 'AppBeta' do
+        inherit! :search_paths
+    end
+end

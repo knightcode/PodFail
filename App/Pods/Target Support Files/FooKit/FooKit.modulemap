@@ -1,0 +1,6 @@
+framework module FooKit {
+  umbrella header "FooKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

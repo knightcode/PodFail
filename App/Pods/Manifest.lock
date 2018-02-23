@@ -1,0 +1,24 @@
+PODS:
+  - FooKit (0.0.1)
+  - FooUI (0.0.1)
+  - PromiseKit/CorePromise (6.1.0)
+
+DEPENDENCIES:
+  - FooKit (from `../FooKit`)
+  - FooUI (from `../FooUI`)
+  - PromiseKit/CorePromise
+
+EXTERNAL SOURCES:
+  FooKit:
+    :path: ../FooKit
+  FooUI:
+    :path: ../FooUI
+
+SPEC CHECKSUMS:
+  FooKit: fa564baa6f18c5ddafc81e2869b602348930c7a3
+  FooUI: 9d0597198336abf6f9d12328f72e6e8f9e5650fa
+  PromiseKit: cf84274e6d2bec1d42e21ade146645752b0b7bed
+
+PODFILE CHECKSUM: 1d9887a0d658d0dceb491b48aab90d35fef5b0f7
+
+COCOAPODS: 1.4.0
