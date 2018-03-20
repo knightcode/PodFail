@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "10.0"
   s.swift_version = "4.0"
+  s.pod_target_xcconfig = { "INFOPLIST_FILE" => "${PODS_TARGET_SRCROOT}/Info.plist" }
 
   s.source_files  = "Sources/**/*"
 

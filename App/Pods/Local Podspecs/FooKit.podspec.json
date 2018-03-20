@@ -17,5 +17,8 @@
     "ios": "10.0"
   },
   "swift_version": "4.0",
+  "pod_target_xcconfig": {
+    "INFOPLIST_FILE": "${PODS_TARGET_SRCROOT}/Info.plist"
+  },
   "source_files": "Sources/**/*"
 }
