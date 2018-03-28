@@ -10,8 +10,10 @@
   "authors": {
     "PJ": "knightcode@gmail.com"
   },
+  "social_media_url": "http://twitter.com/knightcode",
   "source": {
-    "git": "https://github.com/knightcode/FooUI.git"
+    "git": "https://github.com/knightcode/FooUI.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "10.0"
@@ -20,9 +22,15 @@
   "source_files": "Sources/**/*",
   "resource_bundles": {
     "FooAsset": [
-      "Assets/*.xib",
-      "Assets/*.storyboard",
-      "Assets/*.xcassets"
+      "Assets/**/*.xib",
+      "Assets/**/*.storyboard",
+      "Assets/**/*.xcassets"
+    ]
+  },
+  "frameworks": "UIKit",
+  "dependencies": {
+    "FooKit": [
+
     ]
   }
 }

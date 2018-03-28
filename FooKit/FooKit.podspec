@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT" }
 
   s.author       = { "PJ" => "knightcode@gmail.com" }
-  s.source	 = { :git => "https://github.com/knightcode/FooKit.git" }
+  s.social_media_url   = "http://twitter.com/knightcode"
+  s.source	 = { :git => "https://github.com/knightcode/FooKit.git", :tag => s.version.to_s }
   s.platform     = :ios
   s.ios.deployment_target = "10.0"
   s.swift_version = "4.0"
@@ -21,4 +22,9 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Sources/**/*"
 
+  s.frameworks = "CoreLocation", "AVFoundation"
+
+  s.dependency "PromiseKit"
+  s.dependency "SwiftMoment"
+  s.dependency "CryptoSwift"
 end

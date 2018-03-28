@@ -10,8 +10,10 @@
   "authors": {
     "PJ": "knightcode@gmail.com"
   },
+  "social_media_url": "http://twitter.com/knightcode",
   "source": {
-    "git": "https://github.com/knightcode/FooKit.git"
+    "git": "https://github.com/knightcode/FooKit.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "10.0"
@@ -20,5 +22,20 @@
   "pod_target_xcconfig": {
     "INFOPLIST_FILE": "${PODS_TARGET_SRCROOT}/Info.plist"
   },
-  "source_files": "Sources/**/*"
+  "source_files": "Sources/**/*",
+  "frameworks": [
+    "CoreLocation",
+    "AVFoundation"
+  ],
+  "dependencies": {
+    "PromiseKit": [
+
+    ],
+    "SwiftMoment": [
+
+    ],
+    "CryptoSwift": [
+
+    ]
+  }
 }

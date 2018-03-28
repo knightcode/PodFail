@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT" }
 
   s.author       = { "PJ" => "knightcode@gmail.com" }
-  s.source	 = { :git => 'https://github.com/knightcode/FooUI.git' }
+  s.social_media_url   = "http://twitter.com/knightcode"
+  s.source	 = { :git => 'https://github.com/knightcode/FooUI.git', :tag => s.version.to_s }
 
   s.platform     = :ios
   s.ios.deployment_target = "10.0"
@@ -21,7 +22,9 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Sources/**/*"
   s.resource_bundles = {
-    'FooAsset' => ['Assets/*.xib', 'Assets/*.storyboard', 'Assets/*.xcassets']
+    'FooAsset' => ['Assets/**/*.xib', 'Assets/**/*.storyboard', 'Assets/**/*.xcassets']
   }
 
+  s.frameworks = 'UIKit'
+  s.dependency 'FooKit'
 end

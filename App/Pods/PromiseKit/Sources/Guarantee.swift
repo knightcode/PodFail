@@ -1,6 +1,7 @@
 import class Foundation.Thread
 import Dispatch
 
+/// A `Guarantee` is a functional abstraction around an asynchronous operation that cannot error.
 public class Guarantee<T>: Thenable {
     let box: Box<T>
 
@@ -148,3 +149,15 @@ public extension DispatchQueue {
         return rg
     }
 }
+
+
+#if os(Linux)
+import func CoreFoundation._CFIsMainThread
+
+extension Thread {
+    // `isMainThread` is not implemented yet in swift-corelibs-foundation.
+    static var isMainThread: Bool {
+        return _CFIsMainThread()
+    }
+}
+#endif

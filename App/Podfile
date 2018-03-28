@@ -11,6 +11,5 @@ target 'App' do
     pod 'FooKit', :path => '../FooKit'
     pod 'FooUI', :path => '../FooUI'
     target 'AppBeta' do
-        inherit! :search_paths
     end
 end
